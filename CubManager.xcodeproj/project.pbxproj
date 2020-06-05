@@ -11,6 +11,9 @@
 		84477322247BFB6F009FC2E3 /* PhoneNumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84477321247BFB6F009FC2E3 /* PhoneNumberVC.swift */; };
 		84477324247BFBD7009FC2E3 /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84477323247BFBD7009FC2E3 /* UserInfoVC.swift */; };
 		8447732A247D298A009FC2E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84477329247D298A009FC2E3 /* GoogleService-Info.plist */; };
+		8447732C247D69EB009FC2E3 /* MenuPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447732B247D69EB009FC2E3 /* MenuPopUpView.swift */; };
+		84552FD124802A25007B9B6D /* UIView+Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84552FD024802A25007B9B6D /* UIView+Message.swift */; };
+		8492C23E2489891300474D72 /* TestDrivers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8492C23D2489891300474D72 /* TestDrivers.swift */; };
 		84DB30412476AE850040BDF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DB30402476AE850040BDF6 /* AppDelegate.swift */; };
 		84DB30432476AE850040BDF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DB30422476AE850040BDF6 /* SceneDelegate.swift */; };
 		84DB30452476AE850040BDF6 /* ContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DB30442476AE850040BDF6 /* ContentVC.swift */; };
@@ -28,6 +31,9 @@
 		84477321247BFB6F009FC2E3 /* PhoneNumberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberVC.swift; sourceTree = "<group>"; };
 		84477323247BFBD7009FC2E3 /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
 		84477329247D298A009FC2E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8447732B247D69EB009FC2E3 /* MenuPopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPopUpView.swift; sourceTree = "<group>"; };
+		84552FD024802A25007B9B6D /* UIView+Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Message.swift"; sourceTree = "<group>"; };
+		8492C23D2489891300474D72 /* TestDrivers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDrivers.swift; sourceTree = "<group>"; };
 		84DB303D2476AE850040BDF6 /* CubManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CubManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DB30402476AE850040BDF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84DB30422476AE850040BDF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,8 +79,18 @@
 			isa = PBXGroup;
 			children = (
 				84DB3056247BB9320040BDF6 /* MapViewModule.swift */,
+				8447732B247D69EB009FC2E3 /* MenuPopUpView.swift */,
+				84552FD024802A25007B9B6D /* UIView+Message.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		8492C23F2489891F00474D72 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8492C23D2489891300474D72 /* TestDrivers.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		84DB30342476AE850040BDF6 = {
@@ -101,6 +117,7 @@
 				84DB30552476BB9B0040BDF6 /* Supporting Files */,
 				84DB30542476BB900040BDF6 /* Controllers */,
 				8447731E247BFAE1009FC2E3 /* Views */,
+				8492C23F2489891F00474D72 /* Models */,
 				84DB30462476AE850040BDF6 /* Main.storyboard */,
 				84DB30492476AE8A0040BDF6 /* Assets.xcassets */,
 				84DB304B2476AE8A0040BDF6 /* LaunchScreen.storyboard */,
@@ -247,12 +264,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				84477320247BFB1E009FC2E3 /* CodeValidVC.swift in Sources */,
+				8492C23E2489891300474D72 /* TestDrivers.swift in Sources */,
 				84DB30452476AE850040BDF6 /* ContentVC.swift in Sources */,
 				84DB3057247BB9320040BDF6 /* MapViewModule.swift in Sources */,
 				84DB30412476AE850040BDF6 /* AppDelegate.swift in Sources */,
+				84552FD124802A25007B9B6D /* UIView+Message.swift in Sources */,
 				84477324247BFBD7009FC2E3 /* UserInfoVC.swift in Sources */,
 				84477322247BFB6F009FC2E3 /* PhoneNumberVC.swift in Sources */,
 				84DB30432476AE850040BDF6 /* SceneDelegate.swift in Sources */,
+				8447732C247D69EB009FC2E3 /* MenuPopUpView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
