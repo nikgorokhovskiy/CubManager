@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X3k-04-Hla">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -284,7 +284,7 @@
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фамилия (видна только для вас)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amc-zd-NHc">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фамилия" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amc-zd-NHc">
                                         <rect key="frame" x="0.0" y="106.5" width="374" height="26.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                         <nil key="textColor"/>
@@ -327,6 +327,9 @@
                                                 <integer key="value" value="12"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="continueButtonTapped:" destination="X3k-04-Hla" eventType="touchUpInside" id="OZ0-wx-U0k"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -336,10 +339,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="для отображения ошибки" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90t-Xz-GsU">
+                                <rect key="frame" x="20" y="610.5" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="SrB-8H-B1F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.55983412269999999" green="0.84097772839999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="grc-CI-3Np" firstAttribute="top" secondItem="ABd-MQ-Evn" secondAttribute="bottom" constant="40" id="266-qu-Pqy"/>
+                            <constraint firstItem="90t-Xz-GsU" firstAttribute="top" secondItem="grc-CI-3Np" secondAttribute="bottom" constant="40" id="6Ck-qz-G87"/>
+                            <constraint firstItem="90t-Xz-GsU" firstAttribute="leading" secondItem="fh3-2v-tNB" secondAttribute="leading" constant="20" id="BSZ-Kf-eMI"/>
+                            <constraint firstItem="fh3-2v-tNB" firstAttribute="trailing" secondItem="90t-Xz-GsU" secondAttribute="trailing" constant="20" id="Mel-Ze-t1L"/>
                             <constraint firstItem="grc-CI-3Np" firstAttribute="centerY" secondItem="9yH-aR-X2v" secondAttribute="centerY" multiplier="0.85" id="Mq4-hx-o3I"/>
                             <constraint firstItem="grc-CI-3Np" firstAttribute="centerX" secondItem="9yH-aR-X2v" secondAttribute="centerX" id="WZx-Kx-EZI"/>
                             <constraint firstItem="fh3-2v-tNB" firstAttribute="trailing" secondItem="grc-CI-3Np" secondAttribute="trailing" constant="20" id="wGc-9F-NkX"/>
@@ -348,6 +363,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fh3-2v-tNB"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="vkH-PT-Y0N" id="Hbw-0i-GcJ"/>
+                        <outlet property="errorLabel" destination="90t-Xz-GsU" id="F9M-D3-Hdb"/>
+                        <outlet property="firstNameTextField" destination="FE4-Lx-gda" id="bZh-Ve-ecC"/>
+                        <outlet property="secondNameTextField" destination="WMW-l2-LJO" id="rje-K8-dIL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aZC-hq-HyF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

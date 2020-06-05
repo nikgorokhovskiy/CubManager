@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import Firebase
 import FirebaseAuth
 import SwiftEntryKit
 
@@ -44,6 +45,7 @@ class ContentVC: UIViewController {
                 self.authButton.titleLabel?.text = "Выйти"
                 
                 self.userLabel.text = Auth.auth().currentUser?.phoneNumber
+                
             } else {
                 self.userLabel.text = "Пользователь не авторизован"
             }
@@ -281,6 +283,7 @@ extension ContentVC: CLLocationManagerDelegate {
             mapView.setRegion(region, animated: true)
             guard let currentLocation: CLLocationCoordinate2D = manager.location?.coordinate else { return }
             coordinateOfUser = currentLocation //передача текущего местоположения
+            print("\(coordinateOfUser?.longitude) \(coordinateOfUser?.latitude)")
             
         }
     }
