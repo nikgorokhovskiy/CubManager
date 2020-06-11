@@ -45,7 +45,7 @@ class ContentVC: UIViewController {
                 self.authButton.titleLabel?.text = "Выйти"
                 
                 self.userLabel.text = Auth.auth().currentUser?.phoneNumber
-                
+                	
             } else {
                 self.userLabel.text = "Пользователь не авторизован"
             }

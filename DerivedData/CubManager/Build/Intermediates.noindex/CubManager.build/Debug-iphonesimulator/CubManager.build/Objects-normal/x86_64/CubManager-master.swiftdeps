@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
+options: "3f7822ee3fd1392b3bdf99d4c8880c0e"
+build_time: [1590066723, 153800000]
+inputs:
+  "/Users/admin/Documents/Being developed/CubManager/CubManager/ViewController.swift": [1590065331, 256170497]
+  "/Users/admin/Documents/Being developed/CubManager/CubManager/AppDelegate.swift": [1590064901, 255060204]
+  "/Users/admin/Documents/Being developed/CubManager/CubManager/SceneDelegate.swift": [1590064901, 264007211]

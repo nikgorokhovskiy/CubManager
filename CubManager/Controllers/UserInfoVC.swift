@@ -48,7 +48,7 @@ class UserInfoVC: UIViewController {
             emailTextField?.text = ""
         }
         let db = Firestore.firestore()
-        db.collection("user").document(Auth.auth().currentUser!.uid).setData([
+        db.collection("users").document(Auth.auth().currentUser!.uid).setData([
             "firstName" : firstNameTextField.text!,
             "secondName" : secondNameTextField.text!,
             "email" : emailTextField!.text!
